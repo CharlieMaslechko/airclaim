@@ -1,0 +1,16 @@
+{
+  "name": "@vector/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "PROPRIETARY",
+  "exports": {
+    "./base.json": "./base.json",
+    "./react-internal.json": "./react-internal.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

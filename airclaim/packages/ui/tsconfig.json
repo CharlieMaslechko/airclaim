@@ -1,0 +1,13 @@
+{
+    "extends": "@vector/typescript-config/react-internal.json",
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@vector/ui/*": ["./src/*"]
+      }
+    },
+    "include": ["."],
+    "exclude": ["node_modules", "dist"]
+}
+
+  

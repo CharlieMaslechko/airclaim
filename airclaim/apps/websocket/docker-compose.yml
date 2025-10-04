@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  telegram-websocket:
+    build: .
+    container_name: telegram-ws-bridge
+    restart: unless-stopped
+    ports:
+      - "8765:8765"
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - WS_HOST=0.0.0.0
+      - WS_PORT=8765
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

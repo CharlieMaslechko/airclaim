@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+html, body {
+  background: transparent !important;
+  border-radius: 20px !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background: transparent !important;
+  border-radius: 20px !important;
+  margin: 0;
+  padding: 0;
+}

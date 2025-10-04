@@ -1,0 +1,53 @@
+{
+  "name": "vector-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "vector Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "build:all": "turbo build",
+    "dev:all": "turbo dev",
+    "dev": "turbo run dev --parallel",
+    "lint:all": "turbo lint",
+    "clean:all": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "test:all": "turbo test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.56.3",
+    "framer-motion": "^12.11.0",
+    "lucide-react": "^0.510.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
+    "@vector/eslint-config": "workspace:*",
+    "@vector/typescript-config": "workspace:*",
+    "@react-oauth/google": "^0.12.2",
+    "@tailwindcss/postcss": "^4.1.6",
+    "autoprefixer": "^10.4.21",
+    "commitlint": "^19.8.1",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.5.3",
+    "shadcn-ui": "^0.9.5",
+    "tailwindcss": "^4.1.6",
+    "turbo": "^2.5.3",
+    "@turbo/gen": "^2.4.2",
+    "@hookform/resolvers": "^5.0.1",
+    "zod": "^3.24.4",
+    "tailwind-merge": "^3.3.0",
+    "tw-animate-css": "^1.2.9",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.4",
+    "typescript": "^5.8.3"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

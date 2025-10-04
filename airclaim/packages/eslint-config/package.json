@@ -1,0 +1,33 @@
+{
+  "name": "@vector/eslint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./base": "./base.config.js",
+    "./react": "./react.config.js"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/node": "^24.6.2",
+    "@typescript-eslint/utils": "^8.31.1",
+    "@vector/typescript-config": "workspace:*",
+    "eslint": "^9.25.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-turbo": "^2.5.0",
+    "globals": "^16.0.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.31.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

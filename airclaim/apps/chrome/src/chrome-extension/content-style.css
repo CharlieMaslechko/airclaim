@@ -1,0 +1,23 @@
+#vector-hud {
+    /* Position it fixed so it stays on screen even when you scroll */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Style the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+    /* Make sure it's on top of other content */
+    z-index: 9999;
+}
+
+#vector-hud p {
+    margin: 0;
+    padding: 0;
+}

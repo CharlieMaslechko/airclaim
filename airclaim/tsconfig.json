@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./vector/packages/types" },
+    { "path": "./vector/packages/ui" },
+    { "path": "./vector/apps/api" },
+    { "path": "./vector/apps/chrome" }
+  ]
+}
