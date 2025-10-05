@@ -14,7 +14,7 @@ TEST_CHANNEL_ID = int(
 
 
 class TelegramListener:
-    def __init__(self, on_message: Callable[[Message], Awaitable[None]]):
+    def __init__(self, on_message: Callable[[str], Awaitable[None]]):
         self.channel_id = TEST_CHANNEL_ID
         self.on_message = on_message
         self.client = TelegramClient(
@@ -30,6 +30,7 @@ class TelegramListener:
 
         @self.client.on(events.NewMessage(chats=entity))
         async def _handler(event: events.NewMessage.Event):
-            await self.on_message(event.message)
+            message_text = event.message.text or ""
+            await self.on_message(message_text)
 
         await self.client.run_until_disconnected()
